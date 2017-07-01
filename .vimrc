@@ -17,9 +17,12 @@ if dein#load_state('/Users/kk6/.vim/bundles')
   " Add or remove your plugins here:
   call dein#add('Shougo/neosnippet.vim')
   call dein#add('Shougo/neosnippet-snippets')
+  call dein#add('Shougo/vimshell')
+  "call dein#add('editorconfig/editorconfig-vim')
+  call dein#add('KolesnichenkoDS/editorconfig.vim')
 
   " You can specify revision/branch/tag.
-  call dein#add('Shougo/vimshell', { 'rev': '3787e5' })
+  " call dein#add('Shougo/vimshell', { 'rev': '3787e5' })
 
   " Required:
   call dein#end()
