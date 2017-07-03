@@ -17,7 +17,7 @@ hgext.convert =
 hgext.extdiff =
 shelve =
 histedit =
-info = ~/.hgext/info.py
+#info = ~/.hgext/info.py
 mq =
 pager =
 progress =
@@ -26,8 +26,8 @@ rebase =
 record =
 schemes =
 transplant =
-hgflow = ~/.hgext/hgflow/hgflow-v0.4.pyhgflow-v0.4.py
-prompt = ~/.hgext/hg-prompt/prompt.py
+#hgflow = ~/.hgext/hgflow/hgflow-v0.4.pyhgflow-v0.4.py
+#prompt = ~/.hgext/hg-prompt/prompt.py
 
 [color]
 mode = ansi
