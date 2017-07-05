@@ -43,3 +43,6 @@ syntax enable
 set encoding=utf-8
 set fileencoding=utf-8
 set fileformats=unix,dos,mac
+
+"color scheme
+color Tomorrow-Night-Eighties
