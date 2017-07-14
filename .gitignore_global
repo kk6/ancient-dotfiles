@@ -94,7 +94,6 @@ Temporary Items
 
 ### Mercurial ###
 .hg/
-.hgignore
 .hgsigs
 .hgsub
 .hgsubstate
