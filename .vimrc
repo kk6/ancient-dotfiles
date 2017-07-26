@@ -53,3 +53,8 @@ let g:vimfiler_as_default_explorer = 1
 let g:vimfiler_safe_mode_by_default = 0
 " Press `,e`, open the directory of the current buffer.
 nnoremap <silent> ,e :<C-u>VimFilerBufferDir<CR>
+
+" Do not create swapfile, backup(~), viminfo
+set noswapfile
+set nobackup
+set viminfo=
