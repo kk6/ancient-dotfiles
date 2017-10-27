@@ -10,9 +10,15 @@ set -g fish_user_paths "/usr/local/opt/icu4c/sbin" $fish_user_paths
 eval (direnv hook fish)
 
 # for npm / yarn
-if test -d '$HOME/.npm-global'
-  set -x PATH "$HOME/.npm-global/bin:$PATH"
-end
+set -g -x PATH $HOME/.npm-global/bin $PATH
 
 set -g -x PATH /usr/local/bin $PATH
+set -g -x PYTHONUSERBASE $HOME/.local
+set -g -x PATH $PYTHONUSERBASE/bin $PATH
 
+
+# Path to your custom folder (default path is $FISH/custom)
+set fish_custom $HOME/.config/fish
+
+# load secret config (API keys, etc.)
+. $fish_custom/config.secret.fish
