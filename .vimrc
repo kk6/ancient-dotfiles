@@ -58,3 +58,40 @@ nnoremap <silent> ,e :<C-u>VimFilerBufferDir<CR>
 set noswapfile
 set nobackup
 set viminfo=
+
+" Visual-------------------------
+"
+" Show command
+set showcmd
+" Show line number
+set number
+" Highlight current line and column
+set cursorline
+set cursorcolumn
+" Smart indent
+set smartindent
+" Always show status line
+set laststatus=2
+
+" Tabs---------------------------
+set list listchars=tab:\▸\-
+set expandtab
+set tabstop=2
+set shiftwidth=2
+
+" Search-------------------------
+"
+" search all upper and lower
+set ignorecase
+" If the search character string contains uppercase,
+" search is done distinctly.
+set smartcase
+" incremental search
+set incsearch
+" Go back to the beginning when you go to the end when searching.
+set wrapscan
+" Highlighting search words
+set hlsearch
+" Stop highlighting
+nmap <Esc><Esc> :nohlsearch<CR><Esc>
+
