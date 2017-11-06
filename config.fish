@@ -22,3 +22,8 @@ set fish_custom $HOME/.config/fish
 
 # load secret config (API keys, etc.)
 . $fish_custom/config.secret.fish
+
+# for pipenv
+set -g -x PIPENV_DEFAULT_PYTHON_VERSION 3
+set -g -x PIPENV_SHELL_FANCY 1
+
