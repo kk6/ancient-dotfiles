@@ -3,6 +3,7 @@ username = kk6
 ssh = ssh -C
 editor = vim
 ignore = ~/.hgignore
+#ignore.local = .hg/hgignore
 merge = kdiff3
 
 [pager]
