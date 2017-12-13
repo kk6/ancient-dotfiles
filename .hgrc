@@ -51,11 +51,19 @@ bb = ssh://hg@bitbucket.org/
 gh = git://github.com/
 ghs = git+ssh://github.com/
 
+[revsetalias]
+# Current branch's root
+root = roots(branch(.))
+# Parent's tip revision
+ptip = last(branch(parents(root)))
+
 [alias]
 #_status = status
 #st = ! $HG _status $($HG root) $HG_ARGS
 glog = log -G
 glc = log -G --style compact
+# Merge the tip of parents
+mp = merge ptip
 
 # branch
 b = branch
