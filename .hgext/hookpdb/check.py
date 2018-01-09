@@ -7,7 +7,7 @@ from fnmatch import fnmatch
 
 COMMAND = r"grep -l {pattern} {file}"
 INFO = '{filename}: debugger found.'
-PATTERNS = ['pdb.set_trace', 'import debug']
+PATTERNS = ['pdb.set_trace', 'import debug$']
 
 
 def check(repo, file, patterns):
