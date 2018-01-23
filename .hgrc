@@ -4,7 +4,7 @@ ssh = ssh -C
 editor = vim
 ignore = ~/.hgignore
 #ignore.local = .hg/hgignore
-merge = kdiff3
+merge = vimdiff
 
 [pager]
 pager = LESS='-R' less
@@ -39,9 +39,6 @@ cmd.kdiff3 =
 
 [merge-tools]
 kdiff3.args = $base $local $other -o $output
-
-[diff]
-git = True
 
 [mq]
 secret = True
