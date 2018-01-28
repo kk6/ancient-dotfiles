@@ -2,6 +2,7 @@
 alias l "ls"
 alias mkdirs "mkdir -p"
 alias pe "pipenv"
+alias pei "pipenv install"
 alias per "pipenv run"
 alias pes "pipenv shell"
 
