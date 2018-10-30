@@ -95,3 +95,8 @@ set hlsearch
 " Stop highlighting
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
+" 分割ウインドウの移動のマッピングを変更
+map <C-J> <C-W>j
+map <C-K> <C-W>k
+map <C-L> <C-W>l
+map <C-H> <C-W>h
