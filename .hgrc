@@ -4,7 +4,7 @@ ssh = ssh -C
 editor = vim
 ignore = ~/.hgignore
 #ignore.local = .hg/hgignore
-merge = vimdiff
+merge = kdiff3
 
 [pager]
 pager = LESS='-R' less
