@@ -1,5 +1,5 @@
 [flake8]
 ignore =
 max-line-length = 120
-exclude = migrations,docs
+exclude = .venv,.git,venv,migrations,docs
 max-complexity = 10
