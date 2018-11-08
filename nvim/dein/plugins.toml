@@ -1,0 +1,6 @@
+[[plugins]]
+repo = 'cespare/vim-toml'
+
+[[plugins]]
+repo = 'rakr/vim-one'
+

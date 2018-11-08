@@ -44,3 +44,6 @@ set -x PATH $HOME/.poetry/bin $PATH
 # Golang
 set -x GOPATH $HOME/.go
 set -x PATH $GOPATH $PATH
+
+set -g XDG_CONFIG_HOME "$HOME/.config"
+set -g XDG_CACHE_HOME "$HOME/.cache"
