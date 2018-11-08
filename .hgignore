@@ -69,3 +69,6 @@ nosetests.xml
 # autoenv
 .env
 
+node_modules
+debug_toolbar/
+
