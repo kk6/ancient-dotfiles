@@ -47,10 +47,6 @@ if (empty($TMUX))
   endif
 endif
 
-colorscheme one 
-set background=dark
-let g:airline_theme='one'
-
 " 行番号を表示
 set number
 
