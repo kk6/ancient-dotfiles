@@ -67,6 +67,7 @@ set expandtab
 set tabstop=4
 set smartindent
 set virtualedit=block
+set shiftwidth=4
 
 set ignorecase
 set smartcase
