@@ -15,13 +15,14 @@ if dein#load_state('~/.cache/dein')
   endif
 
   call dein#load_toml('~/.config/nvim/dein/plugins.toml')
+  call dein#load_toml('~/.config/nvim/dein/plugins_lazy.toml', {'lazy': 1})
 
   call dein#end()
   call dein#save_state()
 endif
 
 " もし未インストールのものがあったらインストールする
-if dein#check_install()
+if has('vim_starting') && dein#check_install()
   call dein#install()
 endif
 
@@ -74,3 +75,7 @@ set smartcase
 set incsearch
 set nohlsearch
 set wrapscan
+
+" for Python
+let g:python_host_prog = $PYENV_ROOT.'/versions/2.7.15/bin/python'
+let g:python3_host_prog = $PYENV_ROOT.'/versions/3.7.1/bin/python'
