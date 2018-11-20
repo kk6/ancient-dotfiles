@@ -13,8 +13,10 @@ alias twitter "open -na 'Google Chrome' --args '--app=https://mobile.twitter.com
 alias deck "open -na 'Google Chrome' --args '--app=https://tweetdeck.twitter.com'"
 
 
-set -g fish_user_paths "/usr/local/opt/icu4c/bin" $fish_user_paths
-set -g fish_user_paths "/usr/local/opt/icu4c/sbin" $fish_user_paths
+#set -g fish_user_paths "/usr/local/opt/icu4c/bin" $fish_user_paths
+#set -g fish_user_paths "/usr/local/opt/icu4c/sbin" $fish_user_paths
+set -x PATH /usr/local/opt/icu4c/bin $PATH
+set -x PATH /usr/local/opt/icu4c/sbin $PATH
 
 # direnv
 eval (direnv hook fish)
@@ -47,3 +49,6 @@ set -x PATH $GOPATH $PATH
 
 set -g XDG_CONFIG_HOME "$HOME/.config"
 set -g XDG_CACHE_HOME "$HOME/.cache"
+
+# Rust
+set -x PATH $HOME/.cargo/bin $PATH
