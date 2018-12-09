@@ -24,7 +24,11 @@ eval (direnv hook fish)
 # for npm / yarn
 set -x PATH $HOME/.npm-global/bin $PATH
 
-set -x PATH /usr/local/bin $PATH
+# Since this `/usr/local/bin` has priority over the path setting by fisherman's pyenv plugin, I commented out.
+# `echo{ There is also `/usr/local/bin` properly behind pyenv.
+# (until that time it was defined twice before and after pyenv)
+#set -x PATH /usr/local/bin $PATH
+#
 set -x PYTHONUSERBASE $HOME/.local
 set -x PATH $PYTHONUSERBASE/bin $PATH
 
