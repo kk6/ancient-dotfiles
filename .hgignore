@@ -71,4 +71,4 @@ nosetests.xml
 
 node_modules
 debug_toolbar/
-
+.python-version
