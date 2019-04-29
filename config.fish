@@ -56,3 +56,10 @@ set -g XDG_CACHE_HOME "$HOME/.cache"
 
 # Rust
 set -x PATH $HOME/.cargo/bin $PATH
+
+# For conda
+source (conda info --root)/etc/fish/conf.d/conda.fish
+
+
+# For fzf
+set -g FZF_DEFAULT_OPTS "--height 40% --reverse --border"
