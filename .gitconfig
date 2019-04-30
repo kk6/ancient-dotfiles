@@ -1,5 +1,6 @@
 [core]
 	excludesfile = /Users/kk6/.gitignore_global
+	editor = nvim
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
@@ -18,3 +19,16 @@
 	required = true
 [commit]
 	template = /Users/kk6/.stCommitMsg
+[merge]
+	ff = false
+    tool = vscode
+[mergetool]
+    prompt = false
+    keepBackup = false
+[mergetool "vscode"]
+    cmd = '/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code' \"$MERGED\"
+    trustExitCode = false
+[pull]
+	ff = only
+[credential]
+	helper = osxkeychain
