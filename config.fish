@@ -62,4 +62,5 @@ source (conda info --root)/etc/fish/conf.d/conda.fish
 
 
 # For fzf
-set -g FZF_DEFAULT_OPTS "--height 40% --reverse --border"
+set -x FZF_DEFAULT_OPTS "--height 40% --reverse --border"
+set -x FZF_LEGACY_KEYBINDINGS 0
