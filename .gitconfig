@@ -1,5 +1,4 @@
 [core]
-	excludesfile = /Users/kk6/.gitignore_global
 	editor = nvim
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"

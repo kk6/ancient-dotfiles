@@ -25,6 +25,7 @@ $ ln -s ~/dotfiles/nvim .
 $ ln -s ~/dotfiles/flake8 .
 $ cd fish
 $ ln -s ~/dotfiles/config.fish/ .
+$ ln -s ~/dotfiles/git .
 ```
 
 `.config`そのものを管理しない理由は、ここには`.config/yarn/node_modules`だったり`.config/fish/functions/__fzf_*`の数々だったりが含まれていて、管理したくもないものまで管理するハメになるので。これらをいちいち`.gitignore`に追加するよりも管理したいものだけ個別にリンク貼るほうが楽なため。
